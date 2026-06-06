@@ -2,13 +2,9 @@
 
 One-page marketing site for **Nixpert** — live, hands-on online training in:
 
-- **Nutanix** (AOS, Prism, AHV, NCP)
-- **VMware** (vSphere 8, ESXi, vCenter, VCP)
-- **Linux** (RHCSA path, Bash, systemd)
-- **LLM Fundamentals** (RAG, prompting, evals)
-- **Anthropic Claude** (Claude API, tool use, agents)
-- **OpenAI ChatGPT** (GPT API, function calling, Assistants)
-- **Model Context Protocol (MCP)** (servers, tools, integrations)
+- **Linux** (Basics, Advanced, Shell Scripting, Troubleshooting)
+- **Infrastructure** (Cloud: AWS, GCP, Azure; Hardware; Hyperconverged; Storage & Networking)
+- **Applied AI** (LLMs, RAG, OpenAI ChatGPT, Codex, Anthropic Claude, MCP)
 
 ## Stack
 
