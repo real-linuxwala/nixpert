@@ -25,10 +25,10 @@
       </a>
       <nav class="nav-links" aria-label="Primary">
         <a href="#courses">Courses</a>
-        <a href="#trainer">Trainer</a>
         <a href="#why">Why Nixpert</a>
         <a href="#how">How it works</a>
         <a href="#pricing">Pricing</a>
+        <a class="btn btn-ghost" href="#career">Career</a>
         <a class="btn btn-ghost" href="#enroll">Enroll</a>
       </nav>
       <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
@@ -39,7 +39,7 @@
   <section class="hero">
     <div class="container hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">Live · Hands-on · Instructor-led</p>
+        <p class="eyebrow">Live · Hands-on · Practitioner-led</p>
         <h1>Master the stack that runs<br />the modern data center &amp; AI.</h1>
         <p class="lede">
           Online classes in <strong>Linux</strong>, <strong>Infrastructure</strong>, and
@@ -61,15 +61,10 @@
       <div class="hero-terminal" aria-hidden="true">
         <div class="term-bar"><span></span><span></span><span></span></div>
         <pre class="term-body"><code><span class="c">$</span> nixpert enroll --track all
-<span class="g">✓</span> Linux Basics ....................... ready
-<span class="g">✓</span> Linux Advanced ..................... ready
-<span class="g">✓</span> Linux Shell Scripting .............. ready
-<span class="g">✓</span> Linux Troubleshooting .............. ready
-<span class="g">✓</span> Cloud: AWS / GCP / Azure ........... ready
-<span class="g">✓</span> Hardware + HCI / Storage / Net ..... ready
-<span class="g">✓</span> LLM fundamentals / RAG ............. ready
-<span class="g">✓</span> Anthropic Claude / Claude Code / MCP . . ready
-<span class="g">✓</span> OpenAI ChatGPT / Codex ............. ready
+<span class="g">✓</span> Linux ......................... ready
+<span class="g">✓</span> Infrastructure ................ ready
+<span class="g">✓</span> Applied AI .................... ready
+<span class="g">✓</span> Consulting / Mentoring ......... ready
 <span class="c">$</span> <span class="blink">_</span></code></pre>
       </div>
     </div>
@@ -146,30 +141,6 @@
         </article>
 
         <article class="course-card">
-          <div class="course-icon">☁️</div>
-          <h3>AWS</h3>
-          <p>EC2, S3, VPC, IAM, RDS, CloudFormation, and operational patterns for running workloads on AWS.</p>
-          <ul class="tags"><li>EC2</li><li>IAM</li><li>Infra</li></ul>
-          <span class="course-meta">6 weeks · Beginner → Pro</span>
-        </article>
-
-        <article class="course-card">
-          <div class="course-icon">☁️</div>
-          <h3>GCP</h3>
-          <p>Compute Engine, GKE, Cloud Storage, IAM, VPC, and practical GCP architecture with live lab environments.</p>
-          <ul class="tags"><li>GKE</li><li>VPC</li><li>IAM</li></ul>
-          <span class="course-meta">6 weeks · Beginner → Pro</span>
-        </article>
-
-        <article class="course-card">
-          <div class="course-icon">☁️</div>
-          <h3>Azure</h3>
-          <p>Virtual Machines, VNet, Azure AD, Blob storage, ARM templates, and hybrid identity in enterprise clouds.</p>
-          <ul class="tags"><li>VNet</li><li>ARM</li><li>Hybrid</li></ul>
-          <span class="course-meta">6 weeks · Beginner → Pro</span>
-        </article>
-
-        <article class="course-card">
           <div class="course-icon">🖥️</div>
           <h3>Hardware Basics</h3>
           <p>CPUs, RAM, motherboards, storage, buses, troubleshooting, and maintenance skills aligned with CompTIA A+/Hardware+ objectives.</p>
@@ -238,23 +209,9 @@
           <span class="course-meta">4 weeks · Hands-on</span>
         </article>
 
-      <div class="consulting-card-wrap">
-
-        <article class="consulting-card">
-          <div class="consulting-header">
-            <div class="course-icon">🔌</div>
-            <h3>Anthropic Claude &amp; Ecosystem</h3>
-          </div>
-          <p>Claude and Claude Code SDKs, MCP integrations, tool use design, and building agentic pipelines around Anthropic tenants and APIs.</p>
-          <ul class="tags"><li>Claude Code</li><li>MCP</li><li>Agents</li></ul>
-          <span class="course-meta">5 weeks · Hands-on</span>
-        </article>
-
-        <article class="consulting-card">
-          <div class="consulting-header">
-            <div class="course-icon">🔌</div>
-            <h3>Model Context Protocol (MCP)</h3>
-          </div>
+        <article class="course-card">
+          <div class="course-icon">🤖</div>
+          <h3>Model Context Protocol (MCP)</h3>
           <p>Build MCP servers and clients, expose resources and tools, and wire models into real systems safely.</p>
           <ul class="tags"><li>MCP servers</li><li>Tools &amp; resources</li><li>Integrations</li></ul>
           <span class="course-meta">3 weeks · Hands-on</span>
@@ -262,8 +219,8 @@
 
       </div>
 
-      <h3 class="track-heading">Consulting</h3>
       <div class="consulting-card-wrap">
+
         <article class="consulting-card">
           <div class="consulting-header">
             <div class="course-icon">🤝</div>
@@ -276,40 +233,9 @@
             <a class="btn btn-primary" href="#consulting">Get in touch</a>
           </div>
         </article>
+
       </div>
 
-    </div>
-  </section>
-
-  <!-- ============ TRAINER ============ -->
-  <section class="section section-alt" id="trainer">
-    <div class="container">
-      <div class="section-head">
-        <h2>Trainer</h2>
-        <p>Led by Ayan Kumar Nath, who designs and teaches these courses from production experience and verified certifications.</p>
-      </div>
-      <div class="feature-grid">
-        <div class="feature">
-          <h3>OpenAI / ChatGPT</h3>
-          <p>ChatGPT Foundations for Teachers — issued 2026-05-01 via Credly.</p>
-        </div>
-        <div class="feature">
-          <h3>ISC2</h3>
-          <p>Certified in Cybersecurity (CC) — issued 2024-06-11.<br />ISC2 Candidate — issued 2024-05-12.</p>
-        </div>
-        <div class="feature">
-          <h3>Nutanix</h3>
-          <p>Nutanix Certified Associate 6, Certified Professional 6, and Master 6 — issued late 2024.<br />Also former Nutanix Support Specialist and University Subject Matter Expert.</p>
-        </div>
-      </div>
-      <div class="feature-grid" style="margin-top:22px;">
-        <div class="feature" style="grid-column:1/-1;">
-          <h3>LinkedIn</h3>
-          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="HORIZONTAL" data-vanity="ayankumarnath" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/ayankumarnath?trk=profile-badge" target="_blank" rel="noopener">Ayan Kumar Nath</a></div>
-          <p style="margin:12px 0 0;">For the full Licenses &amp; certifications list, visit <a href="https://www.linkedin.com/in/ayankumarnath/" target="_blank" rel="noopener">linkedin.com/in/ayankumarnath</a>.</p>
-        </div>
-      </div>
-      <p class="section-head" style="margin:28px auto 0;color:var(--muted);font-size:.92rem;">Verified credentials via <a href="https://www.credly.com/users/ayan-nath.9b5d0333" target="_blank" rel="noopener">Credly</a>. You can view the profile for inspectable badges.</p>
     </div>
   </section>
 
@@ -323,7 +249,7 @@
       <div class="feature-grid">
         <div class="feature">
           <h3>🎓 Live, not recorded-only</h3>
-          <p>Every cohort is taught live with Q&amp;A. Sessions are recorded so you never lose a class.</p>
+          <p>Every cohort is taught live with Q&A. Sessions are recorded so you never lose a class.</p>
         </div>
         <div class="feature">
           <h3>🧪 Real labs</h3>
@@ -410,6 +336,7 @@
       </div>
     </div>
   </section>
+
   <!-- ============ CONSULTING ============ -->
   <section class="section" id="consulting">
     <div class="container">
@@ -430,6 +357,49 @@
           <h3>🚀 Startup enablement</h3>
           <p>Founder-friendly guidance on choosing the right infrastructure and AI stack without enterprise bloat.</p>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CAREER ============ -->
+  <section class="section section-alt" id="career">
+    <div class="container">
+      <div class="section-head">
+        <h2>Career at Nixpert</h2>
+        <p>We’re a small, distributed team. If you like teaching, building labs, or scaling infra, send us a note.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature">
+          <h3>What we look for</h3>
+          <p>Hands-on experience, clear teaching instincts, and willingness to write thoughtful courseware. Certifications are a plus, not a gate.</p>
+        </div>
+        <div class="feature">
+          <h3>How to apply</h3>
+          <p>Send your résumé and a short note on what you’d teach or build at Nixpert. No cover-letter gatekeeping.</p>
+        </div>
+        <div class="feature">
+          <h3>Roles</h3>
+          <p>Instructor, lab developer, and ops/support positions open. We value async writing and clear communication over credentials alone.</p>
+        </div>
+      </div>
+      <div class="enroll-grid" style="grid-template-columns: 1fr; max-width: 720px; margin: 32px auto 0;">
+        <form class="enroll-form" action="https://formsubmit.co/hello@nixpert.in" method="POST">
+          <input type="hidden" name="_subject" value="Nixpert: Career / Resume submission" />
+          <label>Name
+            <input type="text" name="name" required placeholder="Your full name" />
+          </label>
+          <label>Email
+            <input type="email" name="email" required placeholder="you@example.com" />
+          </label>
+          <label>Resume link
+            <input type="url" name="resume_link" required placeholder="https://..." />
+          </label>
+          <label>Message (optional)
+            <textarea name="message" rows="3" placeholder="What would you teach, build, or fix at Nixpert?"></textarea>
+          </label>
+          <button class="btn btn-primary btn-block" type="submit">Submit resume</button>
+          <p class="form-note">We’ll review résumés every other weekday. One short reply if there’s a fit.</p>
+        </form>
       </div>
     </div>
   </section>
@@ -456,34 +426,9 @@
         <label>Interested in
           <select name="track" required>
             <option value="" disabled selected>Choose a track…</option>
-            <optgroup label="Linux">
-              <option>Linux: Basics</option>
-              <option>Linux: Advanced</option>
-              <option>Linux: Shell Scripting</option>
-              <option>Linux: Troubleshooting</option>
-            </optgroup>
-            <optgroup label="Infrastructure">
-              <option>Cloud: AWS</option>
-              <option>Cloud: GCP</option>
-              <option>Cloud: Azure</option>
-              <option>Hardware Basics</option>
-              <option>Hyperconverged (HCI) Basics</option>
-              <option>Storage &amp; Networking</option>
-            </optgroup>
-            <optgroup label="Applied AI">
-              <option>LLM Foundations</option>
-              <option>RAG</option>
-              <option>Anthropic Claude</option>
-              <option>OpenAI ChatGPT</option>
-              <option>OpenAI Codex</option>
-              <option>Claude &amp; Ecosystem</option>
-              <option>MCP</option>
-            </optgroup>
-            <optgroup label="Pricing">
-              <option>Infra Bundle</option>
-              <option>AI Bundle</option>
-            </optgroup>
-            <option>Infrastructure Consulting</option>
+            <option>Cloud</option>
+            <option>Infrastructure</option>
+            <option>Linux</option>
           </select>
         </label>
         <label>Message (optional)
@@ -498,6 +443,7 @@
   <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-grid">
+
       <div>
         <a class="brand" href="#top"><span class="brand-mark">&gt;_</span><span class="brand-name">Nix<span class="accent">pert</span></span></a>
         <p class="footer-tag">Online training in cloud, virtualization &amp; AI.</p>
@@ -505,6 +451,7 @@
       <nav aria-label="Footer">
         <a href="#courses">Courses</a>
         <a href="#pricing">Pricing</a>
+        <a href="#career">Career</a>
         <a href="#enroll">Enroll</a>
       </nav>
     </div>

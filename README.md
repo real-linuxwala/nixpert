@@ -3,8 +3,10 @@
 One-page marketing site for **Nixpert** — live, hands-on online training in:
 
 - **Linux** (Basics, Advanced, Shell Scripting, Troubleshooting)
-- **Infrastructure** (Cloud: AWS, GCP, Azure; Hardware; Hyperconverged; Storage & Networking)
-- **Applied AI** (LLMs, RAG, OpenAI ChatGPT, Codex, Anthropic Claude, MCP)
+- **Infrastructure** (Cloud, Hardware Basics, Hyperconverged, Storage & Networking)
+- **Applied AI** (LLMs, RAG, Claude, ChatGPT, Codex, MCP)
+
+We also run custom consulting engagements and accept résumés for open roles.
 
 ## Stack
 
@@ -26,5 +28,5 @@ python3 -m http.server 8000
 2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
 3. Branch: `main` / root. Save.
 
-The enrollment form posts via [FormSubmit](https://formsubmit.co); update the
+The enrollment and career forms post via [FormSubmit](https://formsubmit.co); update the
 `action` email in `index.html` to receive submissions.
