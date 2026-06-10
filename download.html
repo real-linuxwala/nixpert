@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Nixpert — Courseware</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body class="enroll">
+  <section class="section enroll" id="enroll">
+    <div class="container enroll-grid">
+      <div class="enroll-copy">
+        <h2>Get the courseware &amp; pricing</h2>
+        <p>Please share your contact details to access the full courseware PDF.</p>
+        <ul class="enroll-points">
+          <li>✓ One document with every track breakdown</li>
+          <li>✓ Pricing and cohort options included</li>
+          <li>✓ No spam, opt out anytime</li>
+        </ul>
+      </div>
+      <form id="downloadForm" class="enroll-form">
+        <label>Name
+          <input type="text" id="name" name="name" required placeholder="Your full name" />
+        </label>
+        <label>Email
+          <input type="email" id="email" name="email" required placeholder="you@example.com" />
+        </label>
+        <label>Track
+          <select id="track" name="track" required>
+            <option value="" disabled selected>Choose a track…</option>
+            <option>Cloud</option>
+            <option>Infrastructure</option>
+            <option>Linux</option>
+            <option>Applied AI</option>
+          </select>
+        </label>
+        <button id="submitBtn" class="btn btn-primary btn-block" type="submit">Download courseware PDF</button>
+        <p id="error" class="form-note" style="color: #ff8080; display: none;">Please fill all fields before downloading.</p>
+      </form>
+    </div>
+  </section>
+  <script>
+    const form = document.getElementById('downloadForm');
+    const submitBtn = document.getElementById('submitBtn');
+    const error = document.getElementById('error');
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      error.style.display = 'none';
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const track = document.getElementById('track').value;
+      if (!name || !email || !track) {
+        error.style.display = 'block';
+        return;
+      }
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Preparing download…';
+      setTimeout(() => {
+        window.location.href = 'courseware.pdf';
+      }, 300);
+    });
+  </script>
+</body>
+</html>
