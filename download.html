@@ -13,10 +13,10 @@
   <section class="section enroll" id="enroll">
     <div class="container enroll-grid">
       <div class="enroll-copy">
-        <h2>Get the courseware &amp; pricing</h2>
-        <p>Please share your contact details to access the full courseware PDF.</p>
+        <h2>Get the courseware</h2>
+        <p>Please share your contact details to access the courseware PDF for your chosen track.</p>
         <ul class="enroll-points">
-          <li>✓ One document with every track breakdown</li>
+          <li>✓ Linux, Infrastructure, Cloud and Applied AI tracks</li>
           <li>✓ Pricing and cohort options included</li>
           <li>✓ No spam, opt out anytime</li>
         </ul>
@@ -31,10 +31,10 @@
         <label>Track
           <select id="track" name="track" required>
             <option value="" disabled selected>Choose a track…</option>
-            <option>Cloud</option>
-            <option>Infrastructure</option>
-            <option>Linux</option>
-            <option>Applied AI</option>
+            <option value="courseware.pdf">Cloud</option>
+            <option value="infrastructure.pdf">Infrastructure</option>
+            <option value="linux.pdf">Linux</option>
+            <option value="courseware.pdf">Applied AI</option>
           </select>
         </label>
         <button id="submitBtn" class="btn btn-primary btn-block" type="submit">Download courseware PDF</button>
@@ -59,7 +59,7 @@
       submitBtn.disabled = true;
       submitBtn.textContent = 'Preparing download…';
       setTimeout(() => {
-        window.location.href = 'courseware.pdf';
+        window.location.href = track;
       }, 300);
     });
   </script>
