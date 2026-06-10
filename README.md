@@ -28,5 +28,6 @@ python3 -m http.server 8000
 2. Repo **Settings → Pages → Build and deployment → Source: Deploy from a branch**.
 3. Branch: `main` / root. Save.
 
-The enrollment and career forms post via [FormSubmit](https://formsubmit.co); update the
-`action` email in `index.html` to receive submissions.
+## Site behavior
+
+The enrollment form on `index.html` now loads `download.html`, requires name/email/track, and then serves the live courseware PDF.
